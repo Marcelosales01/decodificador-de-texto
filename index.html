@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo_alura" src="assets/logo.png" alt="logo_alura">
+    </header>
+
+    <main>
+    <section class="section_tex_area">
+        <textarea style="resize: none;" class="text_area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+        
+        <div class="informacao">
+            <img src="/assets/icon-park-outline_attention.png" width="15px" height="15px" alt="icone_atencao">
+            <p class="informacao_mensagem">Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="botoes">
+            <button class="botao_criptografar" onclick="BotaoCriptografar()">Criptografar</button>
+            <button class="botao_descriptografar" onclick="BotaoDescriptografar()">Descriptografar</button>
+        </div>
+
+    </section>
+
+    <section class="section_mensagem">
+        <textarea style="resize: none;" class="mensagem" cols="20" rows="10"></textarea>
+        <button class="botao_copiar" onclick="BotaoCopiar()">Copiar</button>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <h6>Desenvolvido por Marcelo</h6>
+        </div>
+        
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
